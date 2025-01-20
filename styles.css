@@ -1,0 +1,186 @@
+body {
+    background-image:url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Helvetica', sans-serif;
+    
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color:rgb(210, 180, 140);
+color: rgba(255, 255, 255, 0.705);
+text-align: center;
+height: 125px;
+padding: 0px;
+}
+
+.welcomebanner {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+    color: rgb(	255, 253, 208);
+    font-size: 150px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.p1 {
+    text-align: center;
+    color: rgb(	245, 245, 220);
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: static;
+}
+
+.p2 {
+    text-align: center;
+    color: rgb(	245, 245, 220);
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: static;
+}
+
+
+.p3 {
+    text-align: center;
+    color: rgb(245, 245, 220);
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: static;
+}
+
+
+@import url(https://fonts.google.com/specimen/Chakra+Petch?categoryFilters=Appearance:%2FTheme%2FTechno);
+
+.abouth1 {
+    text-align: center;
+    color: rgb(245, 245, 220);
+    font-size: 150px;
+    margin: 0px;
+    padding: 185px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.p1a {
+    position: relative;
+    top: -100px;
+    left: 535px;
+    color: rgb(245, 245, 220);
+    font-size: 35px;
+    margin: 0px;
+    padding-top: -50px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.p2a {
+    position: relative;
+    top: -85px;
+    left: 600px;
+    color: rgb(245, 245, 220);
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.p3a {
+    position: relative;
+    top: -75px;
+    left: 600px;
+    color: rgb(245, 245, 220);
+    font-size: 25px;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.contactsection1 {
+    margin: 50px;
+    padding: 100px;
+    color: rgb(245, 245, 220);
+}
+
+.contactsection2 {
+    text-align: center;
+    margin: -200px;
+    padding: 0px;
+}
+
+.githublogo {
+    width: 40px;
+}
+
+.linkedinlogo {
+    width: 40px;
+}
+
+.twitterlogo {
+    width: 35px;
+}
+
+.gmail-logo {
+    width: 35px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px;
+    padding: 0;
+}
+
+.java {
+    color: rgb(245, 245, 220);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sql {
+    color: rgb(245, 245, 220);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.html {
+    color: rgb(245, 245, 220);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.css {
+    color: rgb(245, 245, 220);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.javalogo {
+    width: 40px;
+}
+
+.html-logo {
+    width: 30px;
+}
+
+.css-logo {
+    width: 30px;
+}
