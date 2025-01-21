@@ -29,103 +29,118 @@ left: 0;
 bottom: 0;
 width: 100%;
 background-color:rgb(210, 180, 140);
-color: rgba(255, 255, 255, 0.705);
+color: rgb(	255, 253, 208);
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 text-align: center;
 height: 125px;
 padding: 0px;
+
 }
 
 .welcomebanner {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 65px;
     padding: 0;
     color: rgb(	255, 253, 208);
     font-size: 150px;
     font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     
 }
 
 .p1 {
     text-align: center;
-    color: rgb(	245, 245, 220);
+    color: rgb(	255, 253, 208);
     font-size: 50px;
     font-family:Arial, Helvetica, sans-serif;
     position: static;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .p2 {
     text-align: center;
-    color: rgb(	245, 245, 220);
+    color: rgb(	255, 253, 208);
     font-size: 50px;
     font-family:Arial, Helvetica, sans-serif;
     position: static;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 
 .p3 {
     text-align: center;
-    color: rgb(245, 245, 220);
+    color: rgb(	255, 253, 208);
     font-size: 50px;
     font-family:Arial, Helvetica, sans-serif;
     position: static;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-
-@import url(https://fonts.google.com/specimen/Chakra+Petch?categoryFilters=Appearance:%2FTheme%2FTechno);
-
+/*------------About Me------------ */
 .abouth1 {
     text-align: center;
-    color: rgb(245, 245, 220);
+    color: rgb(255, 253, 208);
     font-size: 150px;
     margin: 0px;
     padding: 185px;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .p1a {
     position: relative;
     top: -100px;
     left: 535px;
-    color: rgb(245, 245, 220);
+    color: rgb(255, 253, 208);
     font-size: 35px;
     margin: 0px;
     padding-top: -50px;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .p2a {
     position: relative;
     top: -85px;
-    left: 600px;
-    color: rgb(245, 245, 220);
+    left: 650px;
+    color: rgb(255, 253, 208);
     font-size: 25px;
     margin: 0px;
     padding: 0px;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .p3a {
     position: relative;
     top: -75px;
-    left: 600px;
-    color: rgb(245, 245, 220);
+    left: 700px;
+    color: rgb(255, 253, 208);
     font-size: 25px;
     margin: 0;
     padding: 0px;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-
+/*------------Contact------------ */
 .contactsection1 {
-    margin: 50px;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
     padding: 100px;
     color: rgb(245, 245, 220);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .contactsection2 {
+    display: grid;
     text-align: center;
-    margin: -200px;
+    margin: -400px;
     padding: 0px;
+    color: rgb(245, 245, 220);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .githublogo {
@@ -144,33 +159,60 @@ padding: 0px;
     width: 35px;
 }
 
-
+/*------------Technology------------ */
 .container {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     margin: 100px;
     padding: 0;
+    border: 1px solid #ce1010;
+    background-color: rgb(211,211,211);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 100px;
+    padding: 0;
+    border: 1px solid #ce1010;
+    background-color: rgb(211,211,211);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
 .java {
     color: rgb(245, 245, 220);
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    
+    
+
 }
 
 .sql {
     color: rgb(245, 245, 220);
     font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    height: auto;
+    padding: 20px;
 }
 
 .html {
     color: rgb(245, 245, 220);
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .css {
     color: rgb(245, 245, 220);
     font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    height: auto;
+    padding: 20px;
 }
 
 .javalogo {
@@ -179,6 +221,7 @@ padding: 0px;
 
 .html-logo {
     width: 30px;
+    
 }
 
 .css-logo {
