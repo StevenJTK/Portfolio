@@ -17,27 +17,29 @@
     </header>
 
     <main>
-<section class="contactsection1">
-    <p>Contact me by filling out this form:</p>
-        <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-    <p></p>
-        <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    <p></p>
-            <label for="subject">Subject:</label>
-                <input type="text" id="text" text="text" required>
-    <p></p>
-         <label for="message">Message:</label>
-    <p></p>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea>
-    <p></p>
-        <input type="submit" value="Submit">
-</section>
+        <section class="contact-card">
+            <p class="contact-text">Contact</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="text" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        
 
-<section class ="contactsection2">
+<section class ="contact-card">
     <h3>GitHub repositories</h3>
-    <article>
+    <article class="contact-text2">
         <p>Dice game built in <a href="https://github.com/StevenJTK/Dice-Game-Assignment-Final" target="_blank">Java</a></p>
         <p>Fighting game in <a href="https://github.com/StevenJTK/Java-B-Adventure" target="_blank">Java</a></p>
         <p>Database project using Java & <a href="https://github.com/StevenJTK/Databashantering-Assignment" target="_blank">SQL</a></p>

@@ -1,8 +1,16 @@
 body {
-    background-image:url("background.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+    margin-bottom: 125px; 
 }
 
 .navbar {
@@ -14,38 +22,34 @@ body {
     align-items: center;
     font-size: 30px;
     font-family: 'Helvetica', sans-serif;
-    
 }
 
 .navbar a {
     color: whitesmoke;
     text-decoration: none;
-    
 }
 
 footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color:rgb(210, 180, 140);
-color: rgb(	255, 253, 208);
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-text-align: center;
-height: 125px;
-padding: 0px;
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(210, 180, 140);
+    color: rgb(255, 253, 208);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    height: 125px;
+    padding: 0px;
 }
 
 .welcomebanner {
     text-align: center;
     margin-top: 65px;
     padding: 0;
-    color: rgb(	255, 253, 208);
+    color: rgb(255, 253, 208);
     font-size: 150px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    
 }
 
 .p1 {
@@ -77,70 +81,127 @@ padding: 0px;
 }
 
 /*------------About Me------------ */
-.abouth1 {
+.about-content {
     text-align: center;
     color: rgb(255, 253, 208);
-    font-size: 150px;
-    margin: 0px;
-    padding: 185px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: 8vw; /* Scales with viewport width for smaller screens */
+    margin: 0;
+    padding: 10vh 0; /* Adjusted padding for more balanced vertical spacing */
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.p1a, .p2a, .p3a {
+    color: rgb(255, 253, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 10px 0;
 }
 
 .p1a {
-    position: relative;
-    top: -100px;
-    left: 535px;
-    color: rgb(255, 253, 208);
-    font-size: 35px;
-    margin: 0px;
-    padding-top: -50px;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
 }
 
 .p2a {
-    position: relative;
-    top: -85px;
-    left: 650px;
-    color: rgb(255, 253, 208);
-    font-size: 25px;
-    margin: 0px;
-    padding: 0px;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
 }
 
 .p3a {
-    position: relative;
-    top: -75px;
-    left: 700px;
-    color: rgb(255, 253, 208);
-    font-size: 25px;
-    margin: 0;
-    padding: 0px;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+}
+
+
+@media screen and (min-width: 769px) {
+    .about-content {
+        font-size: 100px; 
+        padding: 100px 0; 
+    }
+
+    .p1a, .p2a, .p3a {
+        font-size: 30px; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        font-size: 10vw; 
+        padding: 20vh 0;
+    }
+
+    .p1a, .p2a, .p3a {
+        font-size: 1.2rem;
+    }
 }
 
 /*------------Contact------------ */
-.contactsection1 {
-    display: center;
+.contact-card {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 75px;
-    padding: 100px;
-    color: rgb(245, 245, 220);
+    text-align: center;
+    margin: 100px auto; 
+    padding: 20px;
+    background-color: #333333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    width: 400px; 
+    color: rgb(	255, 253, 208);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 100%; 
+  }
+  
+  form label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #007BFF; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0056b3; 
+  }
+  
+  .contact-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(	255, 253, 208);;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
 
-.contactsection2 {
+.contact-text2 {
     display: grid;
     text-align: center;
-    margin: -400px;
-    padding: 0px;
+    margin: 20px;
+    padding: 10px;
     color: rgb(245, 245, 220);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .githublogo {
@@ -160,29 +221,19 @@ padding: 0px;
 }
 
 /*------------Technology------------ */
-.container {
+.container, .container2 {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin: 100px;
-    padding: 0;
-    border: 1px solid #ce1010;
-    background-color: rgb(211,211,211);
+    gap: 20px;
+    width: 80%; 
+    max-width: 1000px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    border: 1px solid #ffffff;
+    background-color: #333333; 
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.container2 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 100px;
-    padding: 0;
-    border: 1px solid #ce1010;
-    background-color: rgb(211,211,211);
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
 }
 .java {
     color: rgb(245, 245, 220);
