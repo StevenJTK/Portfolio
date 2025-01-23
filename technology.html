@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <title>Technological Knowledge</title>
     <link rel="stylesheet" href="styles.css">
-    
-    
 </head>
-<header>
-    <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about me.html">About Me</a>
-    <a href="technology.html">Technology</a>
-    <a href="contact.html">Contact</a>
-</nav>
-</header>
 <body>
-<main>
+    <header>
+        <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="technology.html">Technology</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    </header>
+    <main>
 <section class="container">
     <article class="java">
-     <h1>Java <img src="java.png" class="javalogo"></h1>
+     <h1>Java <img src="images/java.png" alt="Java logo" class="javalogo"></h1>
      
      <p>I have a solid understanding of the core programming principles such as</p>
      <p>encapsulation, inheritance, polymorphism and abstraction.</p>
@@ -38,9 +36,10 @@
         <p>It allowed me to focus and hone in the core fundementals of SQL.</p>
     </article>
 </section>
+
 <section class="container2">
     <article class="html">
-        <h1>HTML <img src="html.png" class="html-logo"></h1>
+        <h1>HTML <img src="images/html.png" alt="HTML logo" class="html-logo"></h1>
         <p>Hyper Text Markup Language (HTML) is the core</p>
         <p>foundation of a website. It is essentially the building</p>
         <p>blocks of all websites. HTML focuses on describing</p>
@@ -48,61 +47,38 @@
         <p>The language does not offer much in terms of design choices.</p>
     </article>
     <article class="css">
-        <h1>CSS <img src="css-3.png" class="css-logo"></h1>
+        <h1>CSS <img src="images/css.png" alt="CSS logo" class="css-logo"></h1>
         <p>Cascading Style Sheets (CSS) solved the issue that HTML could not.</p>
         <p>It allowed the development of large websites and has been the standard</p>
         <p>use for designing websites since. This current website serves as my </p>
         <p>acquired knowledge of both HTML & CSS as a junior developer.</p>
     </article>
-
 </section>
-
 </main>
 
-<footer class="footertech">
+<footer>
     <p>Steven James Tulk 2025. All rights reserved.</p>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-                
-                <a href="about me.html">About</a>
-                
-                <a href="technology.html">Technology</a>
-            </li>
-        </ul>
-    </nav>
-    <nav>
-        <ul>
-            <li>
-                <a href="steven@email.com">
-                    <img src="gmail logo.png" class="gmail-logo">
-                </a>
-                
-                <a href="https://github.com/StevenJTK">
-                    <img src="github-mark.png" class="githublogo"></a>
-                
-                <a href="https://www.linkedin.com/in/steven-james-tulk-4a95681b8/">
-                    <img src="LI-In-Bug.png" class="linkedinlogo"></a>
-            </li>
-        </ul>
-    </nav>
-   
-</footer>
+    <p id="liveTime"></p>
+    <ul>
+        <li>
+            <a href="steven@email.com">
+                <img src="images/gmail-logo.png" alt="Gmail logo" class="gmail-logo">
+            </a>
+
+            <a href="https://github.com/StevenJTK">
+                <img src="images/github-logo.png" alt="Github logo" class="githublogo"></a>
+
+            <a href="https://www.linkedin.com/in/steven-james-tulk-4a95681b8/">
+                <img src="images/linked-logo.png" alt="LinkedIn logo" class="linkedinlogo"> </a>
+        </li>
+    </ul>
+
+    
+    <div id="notification" class="noti">
+        Thank you for checking out my website!
+    </div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="app.js"></script>
 </body>
 </html>
