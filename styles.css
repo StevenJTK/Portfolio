@@ -2,8 +2,8 @@ body {
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /*1*/
-    background-attachment: fixed; /*1*/
+    background-position: center;
+    background-attachment: fixed; 
     overflow-x: hidden;
     min-height: 100vh;
     display: flex;
@@ -28,8 +28,8 @@ main {
 
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack links vertically */
-        font-size: 20px; /* Adjust font size */
+        flex-direction: column;
+        font-size: 20px;
     }
 }
 
@@ -282,13 +282,13 @@ form input[type="submit"]:hover {
     border: 1px solid #ffffff;
     background-color: #333333; 
     border-radius: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 768px) {
     .container, .container2 {
-        width: 90%; /* Use more screen width on small devices */
-        padding: 10px; /* Reduce padding */
+        width: 90%;
+        padding: 10px;
     }
 }
 
