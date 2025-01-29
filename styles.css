@@ -2,6 +2,8 @@ body {
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; /*1*/
+    background-attachment: fixed; /*1*/
     overflow-x: hidden;
     min-height: 100vh;
     display: flex;
@@ -24,6 +26,13 @@ main {
     font-family: 'Helvetica', sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack links vertically */
+        font-size: 20px; /* Adjust font size */
+    }
+}
+
 .navbar a {
     color: whitesmoke;
     text-decoration: none;
@@ -42,7 +51,6 @@ footer {
     padding: 0px;
 }
 
-
 /*------------Home------------ */
 .welcomebanner {
     text-align: center;
@@ -56,28 +64,27 @@ footer {
 
 .p1 {
     text-align: center;
-    color: rgb(	255, 253, 208);
+    color: rgb(255, 253, 208);
     font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: static;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .p2 {
     text-align: center;
-    color: rgb(	255, 253, 208);
+    color: rgb(255, 253, 208);
     font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: static;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-
 .p3 {
     text-align: center;
-    color: rgb(	255, 253, 208);
+    color: rgb(255, 253, 208);
     font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: static;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -91,60 +98,77 @@ footer {
     color: white; 
     border-radius: 5px; 
     display: none;
+    height: auto;
 }
 
 .noti.show {
     display: block;
 }
 
+@media screen and (max-width: 768px) {
+    .welcomebanner {
+        font-size: 10vw; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .noti {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p1 {
+        font-size: 10vw; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p2 {
+        font-size: 8vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p3 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .noti {
+        width: 75px;
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
 /*------------About Me------------ */
 .about-content {
     text-align: center;
     color: rgb(255, 253, 208);
-    font-size: 8vw; /* Scales with viewport width for smaller screens */
-    margin: 0;
-    padding: 10vh 0; /* Adjusted padding for more balanced vertical spacing */
+    font-size: 8vw;
+    margin: 0 auto;
+    padding: 5vh 0;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
-
-.p1a, .p2a, .p3a {
-    color: rgb(255, 253, 208);
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    margin: 10px 0;
-}
-
-.p1a {
-    font-size: 2rem;
-}
-
-.p2a {
-    font-size: 1.5rem;
-}
-
-.p3a {
-    font-size: 1.5rem;
-}
-
 
 @media screen and (min-width: 769px) {
     .about-content {
-        font-size: 100px; 
-        padding: 100px 0; 
+        font-size: 100px;
+        padding: 50px 0;
     }
 
     .p1a, .p2a, .p3a {
-        font-size: 30px; 
+        font-size: 30px;
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .about-content {
-        font-size: 10vw; 
-        padding: 20vh 0;
+        font-size: 10vw;
+        padding: 5vh 0;
     }
 
     .p1a, .p2a, .p3a {
@@ -165,51 +189,59 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     border-radius: 8px;
     width: 400px; 
-    color: rgb(	255, 253, 208);
+    color: rgb(255, 253, 208);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  }
-  
-  form {
+}
+
+@media screen and (max-width: 768px) {
+    .contact-card {
+        width: 250px;
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 15px;
+    }
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 15px; 
     width: 100%; 
-  }
-  
-  form label {
+}
+
+form label {
     font-size: 14px;
     font-weight: bold;
-  }
-  
-  form input, form textarea {
+}
+
+form input, form textarea {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
-  }
-  
-  form input[type="submit"] {
+}
+
+form input[type="submit"] {
     background-color: #007BFF; 
     color: white;
     border: none;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-  }
-  
-  form input[type="submit"]:hover {
+}
+
+form input[type="submit"]:hover {
     background-color: #0056b3; 
-  }
-  
-  .contact-text {
+}
+
+.contact-text {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: rgb(	255, 253, 208);;
+    color: rgb(255, 253, 208);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  }
-  
+}
 
 .contact-text2 {
     display: grid;
@@ -218,7 +250,7 @@ footer {
     padding: 10px;
     color: rgb(245, 245, 220);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .githublogo {
@@ -252,18 +284,23 @@ footer {
     border-radius: 25px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
 }
+
+@media screen and (max-width: 768px) {
+    .container, .container2 {
+        width: 90%; /* Use more screen width on small devices */
+        padding: 10px; /* Reduce padding */
+    }
+}
+
 .java {
     color: rgb(245, 245, 220);
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-    
-    
-
 }
 
 .sql {
     color: rgb(245, 245, 220);
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     height: auto;
     padding: 20px;
@@ -277,7 +314,7 @@ footer {
 
 .css {
     color: rgb(245, 245, 220);
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     height: auto;
     padding: 20px;
@@ -289,7 +326,6 @@ footer {
 
 .html-logo {
     width: 30px;
-    
 }
 
 .css-logo {
